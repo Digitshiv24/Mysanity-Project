@@ -18,6 +18,7 @@ const Blog = ({ data }) => {
         ))}
       </ul>
     </div>
+    
   );
 };
 
