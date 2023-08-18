@@ -9,6 +9,7 @@ export default defineConfig({
 
   projectId: 'au0f4v4g',
   dataset: 'production',
+  apiVersion: "2023-08-31",
 
   plugins: [deskTool(), visionTool()],
 
