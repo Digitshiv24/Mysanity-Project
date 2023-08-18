@@ -7,4 +7,5 @@ export const schemaTypes = [blog,page]
 
 const schemas = [blog,page]
 
-export default schemas;
+export default schemas;  
+
