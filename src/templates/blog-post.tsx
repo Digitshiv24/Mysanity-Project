@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 const Blog = ({ data }) => {
   const post = data.sanityBlogPost;
+  console.log(post);
 
   return (
     <div>

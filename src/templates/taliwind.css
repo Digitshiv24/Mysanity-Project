@@ -1,0 +1,37 @@
+/* YourComponentStyles.css */
+.taliwand-wrapper {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .taliwand-content {
+    margin: 20px 0;
+  }
+  
+  .taliwand-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .taliwand-paragraph p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .taliwand-wrapper {
+      padding: 15px;
+      border-radius: 8px;
+    }
+  
+    .taliwand-paragraph {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,11 +1,29 @@
-import React from 'react'
+import { graphql } from 'gatsby';
+import React from 'react';
 
-const about = () => {
+const about = ({ data }) => {
+  const page = data.sanityPage;
+
   return (
     <div>
-      <h1>gg</h1>
+      {page && (
+        <div>
+          <h1>{page.title}</h1>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
+export const query = graphql`
+  query($slug: String!) {
+    sanityPage(slug: { current: { eq: $slug } }) {
+      id
+      title
+      slug {
+        current
+      }
+    }
+  }
+`;
 
-export default about
+export default about;

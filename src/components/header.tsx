@@ -3,20 +3,21 @@ import { Link } from 'gatsby';
 
 const Header = () => {
   return (
-    <header style={{ background: 'lightgray', padding: '10px', marginBottom: '20px' }}>
-      <nav>
-        <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'center', alignItems: 'center' }}>
-          <li style={{ margin: '0 10px' }}>
-            <Link to="/">Home</Link>
+    <header className='flex flex-col md:flex-row items-center justify-between bg-gray-900 text-white p-6'>
+      <nav className='container mx-auto flex justify-between items-center'>
+        <Link to="/" className='bg-gradient-to-r from-orange-400 via-red-500 to-indigo-600 bg-clip-text text-transparent text-4xl font-bold mb-4 md:mb-0 md:mr-6'>
+        Sanity io
+        </Link>
+        <ul className='flex space-x-6 ml-8'>
+          <li className=''>
+            <Link to="/blog" className='hover:text-gray-400 transition duration-300'>
+              Blog
+            </Link>
           </li>
-          <li style={{ margin: '0 10px' }}>
-            <Link to="/about">About</Link>
-          </li>
-          <li style={{ margin: '0 10px' }}>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li style={{ margin: '0 10px' }}>
-            <Link to="/contact">Contact</Link>
+          <li className=''>
+            <Link to="/contact" className='hover:text-gray-400 transition duration-300'>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
@@ -25,4 +26,3 @@ const Header = () => {
 };
 
 export default Header;
-
