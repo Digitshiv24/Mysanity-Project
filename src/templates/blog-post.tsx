@@ -1,26 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import BlogDisplay from '../components/BlogDisplay/BlogDisplay'; 
 
 const Blog = ({ data }) => {
   const post = data.sanityBlogPost;
-  console.log(post);
 
-  return (
-    <div>
-      <div>
-        {post.content.map((block) => (
-          <p key={block._key}>{block.children[0].text}</p>
-        ))}
-      </div>
-      <p>By {post.author}</p>
-      <ul>
-        {post.tags.map((tag) => (
-          <li key={tag}>{tag}</li>
-        ))}
-      </ul>
-    </div>
-    
-  );
+  return <BlogDisplay post={post} />;
 };
 
 export const query = graphql`
@@ -29,7 +14,6 @@ export const query = graphql`
       title
       author
       content {
-        _key
         children {
           text
         }

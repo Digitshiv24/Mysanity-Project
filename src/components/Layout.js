@@ -10,7 +10,7 @@ export const metadata = {
 const Layout = ({ children }) => {
   return (
     <html lang="en">
-      <body className="max-w-5xl mx-auto py-0 m-10 md:py-3">
+      <body className="max-w-5xl mx-auto py-0 m-10 ">
         <Header />
         <main className="py-5">{children}</main>
       </body>

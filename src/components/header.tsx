@@ -10,13 +10,13 @@ const Header = () => {
         </Link>
         <ul className='flex space-x-6 ml-8'>
           <li className=''>
-            <Link to="/blog" className='hover:text-gray-400 transition duration-300'>
-              Blog
+            <Link to="/about" className='hover:text-gray-400 transition duration-300'>
+              About 
             </Link>
           </li>
           <li className=''>
             <Link to="/contact" className='hover:text-gray-400 transition duration-300'>
-              Contact
+              Contact Us
             </Link>
           </li>
         </ul>
