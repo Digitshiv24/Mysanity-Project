@@ -32,6 +32,8 @@ const BlogDisplay = ({ post }) => {
         </div>
       </div>
     </div>
+
+    
   );
 };
 
